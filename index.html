@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moran Watson Wedding Weekend Guide</title>
+<style>
+  :root{
+    --ink:#2b1c16; --muted:#715844; --line:#c7bdb4; --paper:#f4f0ec; --card:#fbf9f6;
+    --sand:#a69789; --sand-dk:#715844; --sage:#767863; --sage-lt:#e9e8e1; --flag:#efe6d6; --flag-bd:#a69789;
+    --toc-bg:#fbf9f6;
+  }
+  :root[data-theme="dark"]{
+    --ink:#e8e0d8; --muted:#c7bdb4; --line:#4a3b31; --paper:#2b1c16; --card:#3a2b23;
+    --sand:#a69789; --sand-dk:#c7bdb4; --sage:#9ea08a; --sage-lt:#3f4237; --flag:#4a3b31; --flag-bd:#a69789;
+    --toc-bg:#2b1c16;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth; scroll-padding-top:64px}
+  body{margin:0; background:var(--paper); color:var(--ink); font:16px/1.5 Georgia,"Times New Roman",serif}
+  .wrap{max-width:760px; margin:0 auto; padding:0 18px 60px}
+  header.hero{text-align:center; padding:36px 0 18px; border-bottom:1px solid var(--line); margin-bottom:8px}
+  .eyebrow{font:600 12px/1 system-ui,-apple-system,sans-serif; letter-spacing:.22em; text-transform:uppercase; color:var(--sand-dk)}
+  h1{font-weight:400; font-size:34px; margin:10px 0 6px; letter-spacing:.01em}
+  .sub{color:var(--muted); font-size:15px; margin:0}
+  .toc{position:sticky; top:0; z-index:5; background:var(--toc-bg); border-bottom:1px solid var(--line); padding:8px 0; margin:0 -18px 18px; overflow-x:auto; white-space:nowrap}
+  .toc a{display:inline-block; font:500 13px system-ui,-apple-system,sans-serif; color:var(--sage); text-decoration:none; padding:6px 10px; margin:0 2px 0 8px; border:1px solid var(--line); border-radius:999px; background:var(--card)}
+  .toc a:first-child{margin-left:18px}
+  h2{font-weight:400; font-size:24px; margin:34px 0 4px; padding-top:8px; border-top:2px solid var(--sand); color:var(--ink)}
+  h2 small{display:block; font:500 12px system-ui,sans-serif; letter-spacing:.15em; text-transform:uppercase; color:var(--sand-dk); margin-bottom:4px}
+  h3{font:600 15px system-ui,-apple-system,sans-serif; margin:22px 0 8px; color:var(--sage)}
+  p{margin:8px 0}
+  .lead{color:var(--muted); font-size:15px}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px 16px; margin:12px 0}
+  .grid{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+  @media (max-width:520px){.grid{grid-template-columns:1fr}}
+  .kv{font-size:15px; padding:6px 0 6px 12px; border-left:3px solid var(--sand)}
+  .kv b{display:block; font:700 12px system-ui,-apple-system,sans-serif; letter-spacing:.14em; text-transform:uppercase; color:var(--sand-dk); margin-bottom:5px}
+  table.tl{width:100%; border-collapse:collapse; margin:10px 0 4px}
+  table.tl td{vertical-align:top; padding:9px 6px; border-top:1px solid var(--line); font-size:15px}
+  table.tl tr:first-child td{border-top:none}
+  table.tl td.t{width:86px; font:600 14px system-ui,-apple-system,sans-serif; color:var(--sand-dk); white-space:nowrap}
+  table.tl td .who{display:block; font:500 12px system-ui,sans-serif; color:var(--muted); margin-top:2px}
+  ul{padding-left:20px; margin:6px 0}
+  li{margin:4px 0}
+  .flag{background:var(--flag); border:1px solid var(--flag-bd); border-radius:6px; padding:1px 6px; font:600 12px system-ui,sans-serif; color:var(--ink)}
+  .note{background:var(--sage-lt); border-left:4px solid var(--sage); padding:10px 14px; border-radius:0 8px 8px 0; margin:12px 0; font-size:15px}
+  .top{display:block; text-align:right; font:500 12px system-ui,sans-serif; margin-top:10px}
+  a{color:var(--sage)}
+  .mode{position:fixed; right:14px; bottom:14px; z-index:9; font:600 12px system-ui,-apple-system,sans-serif; color:var(--ink); background:var(--card); border:1px solid var(--sand); border-radius:999px; padding:8px 14px; cursor:pointer; box-shadow:0 2px 8px rgba(43,28,22,.18)}
+  footer{margin-top:40px; padding-top:14px; border-top:1px solid var(--line); color:var(--muted); font-size:13px; text-align:center}
+  .grid{gap:14px 22px}
+  @media print{
+    :root, :root[data-theme="dark"]{--paper:#fff; --card:#fff; --ink:#111; --muted:#444; --sage-lt:#f1f3ee; --flag:#f3ecdc; --line:#c7bdb4}
+    .mode{display:none}
+    body{font-size:11.5pt; line-height:1.4}
+    .wrap{max-width:none; padding:0}
+    .toc{position:static; white-space:normal; margin:0 0 10px; border:none}
+    .toc a{border:none; padding:0 8px 0 0; margin:0; background:none}
+    .top{display:none}
+    h2{page-break-after:avoid}
+    h2.first{page-break-before:avoid}
+    .card, .note, table.tl tr{page-break-inside:avoid}
+    header.hero{padding-top:0}
+    a{color:inherit; text-decoration:none}
+  }
+</style>
+</head>
+<body>
+<button class="mode" id="modeBtn" type="button" aria-label="Toggle dark mode">Dark mode</button>
+<div class="wrap">
+
+<header class="hero">
+  <div class="eyebrow">Kristine and Julian</div>
+  <h1>Wedding Weekend Guide</h1>
+  <p class="sub">Friday, September 25, 2026 at Crystal Springs Resort, Vernon, NJ</p>
+</header>
+
+<nav class="toc" id="top">
+  <a href="#quick">Quick reference</a>
+  <a href="#thursday">Thursday</a>
+  <a href="#morning">Friday morning</a>
+  <a href="#ceremony">Ceremony</a>
+  <a href="#cocktail">Cocktail hour</a>
+  <a href="#reception">Reception</a>
+  <a href="#afterparty">After party</a>
+  <a href="#saturday">Saturday</a>
+  <a href="#roles">Dana and Kaya</a>
+  <a href="#rain">Rain plan</a>
+  <a href="#contacts">Contacts</a>
+</nav>
+
+
+<!-- ============ QUICK REFERENCE ============ -->
+<h2 id="quick" class="first"><small>At a glance</small>Quick reference</h2>
+<div class="card grid">
+  <div class="kv"><b>Venue</b>Minerals Hotel at Crystal Springs Resort<br>2 Chamonix Drive, Vernon, NJ 07462</div>
+  <div class="kv"><b>Ceremony</b>4:30 pm, Minerals Wedding Garden (outdoors)<br>Please be seated by 4:15 pm</div>
+  <div class="kv"><b>Cocktail hour</b>5:00 to 6:00 pm, Garden Patio and Diamond Lounge</div>
+  <div class="kv"><b>Reception</b>6:00 to 10:00 pm, Sweetgrass Pavilion (short stone path from the garden)</div>
+  <div class="kv"><b>After party</b>10:00 pm to 1:00 am, Minerals indoor pool (wristband required)</div>
+  <div class="kv"><b>Bridal suite</b>Room 449 (getting ready, bridesmaids and moms)</div>
+  <div class="kv"><b>Groomsmen</b>Julian's suite, room number shared Thursday at check in</div>
+  <div class="kv"><b>Wedding party lineup</b>4:00 pm, Diamond Ballroom, fully dressed</div>
+</div>
+
+<!-- ============ THURSDAY ============ -->
+<h2 id="thursday"><small>Thursday, September 24</small>Rehearsal and rehearsal dinner</h2>
+<table class="tl">
+  <tr><td class="t">2:00 pm</td><td>Decor drop off at the Pavilion by Kristine and Julian, with help from parents. Route: around the back of the hotel into the golfers' lot by the Pavilion, checking in with the guard. Dana meets them there.<span class="who">Couple and parents only</span></td></tr>
+  <tr><td class="t">After 3:00 pm</td><td>Hotel check in. Bridal suite 449 is available from Thursday afternoon through the end of Friday night. Dresses, getting ready items and gifts go into the suite Thursday.<span class="who">Everyone staying at the resort</span></td></tr>
+  <tr><td class="t">5:30 pm</td><td>Ceremony rehearsal. Everyone meets in the <b>main lobby</b> and walks down to the garden together. Takes about 20 minutes. Anyone who cannot make it will be walked through it by Dana on Friday before the ceremony.<span class="who">Full wedding party, parents, officiant, flower granny, ring bearers</span></td></tr>
+  <tr><td class="t">7:00 pm</td><td>Rehearsal dinner at the Minerals Hotel (follow the signs). Buffet opens at 7:15. Cash bar. Ends at 9:00 pm.<span class="who">Wedding party, immediate family and partners</span></td></tr>
+  <tr><td class="t">9:00 pm</td><td>Anyone who wants to keep going heads to Kites (the resort bar).</td></tr>
+</table>
+<a class="top" href="#top">Back to top</a>
+
+<!-- ============ FRIDAY MORNING ============ -->
+<h2 id="morning"><small>Friday, September 25</small>Getting ready</h2>
+
+<h3>Bridesmaids and moms (Room 449)</h3>
+<table class="tl">
+  <tr><td class="t">7:30 am</td><td>Bridal suite opens. Breakfast (bagels and lox from a local deli) will be in the suite. Hair and makeup happen here. Bridesmaids and moms change into their dresses in their own rooms once their hair and makeup are done, and bags and street clothes go back to those rooms before the ceremony.</td></tr>
+  <tr><td class="t">8:30 am</td><td>Hair and makeup team (The Beauty Loft) arrives and starts. Each person has a time slot and should be in the suite, washed up, 10 minutes before it.</td></tr>
+  <tr><td class="t">10:30 am</td><td>Kristine's makeup. Then her hair at 12:30 pm. <span class="flag">KRISTINE TO CONFIRM ORDER</span></td></tr>
+  <tr><td class="t">2:30 pm</td><td>All hair and makeup finished. This is the hard stop given to the stylists.</td></tr>
+  <tr><td class="t">3:00 pm</td><td>Photographers arrive at the suite. <b>Every bridesmaid fully dressed and ready by 3:00.</b> Kristine goes into her dress a few minutes after they arrive.</td></tr>
+</table>
+
+<h3>Groomsmen (Julian's suite)</h3>
+<table class="tl">
+  <tr><td class="t">11:00 am</td><td>Groomsmen lunch delivered to Julian's room (deli sandwiches, pasta salad, chips). No breakfast is provided. Groomsmen get ready in this room.</td></tr>
+  <tr><td class="t">By 2:00 pm</td><td>Groomsmen help with reception table setup in the Pavilion (centerpieces and table decor, alongside Dana and Kristen), and carry out and set up the lawn games (cornhole and pong) on the Pavilion patio. Dana or Kaya will say where things go.</td></tr>
+  <tr><td class="t">3:00 pm</td><td><b>All groomsmen fully dressed.</b> Julian stays in pants, undershirt, socks and shoes only. The best men help him with jacket, tie, cufflinks and watch on camera. Julian's mom (Sonia) will be in the room to help keep everyone moving. Johnny (second photographer) covers this room.</td></tr>
+</table>
+
+<h3>Parents and family</h3>
+<table class="tl">
+  <tr><td class="t">2:00 pm</td><td>Both sets of parents check in (early check in is arranged). Late checkout at 1:00 pm Saturday is also arranged for the parents.</td></tr>
+  <tr><td class="t">3:30 to 4:00</td><td>Kristine's first look with her dad, by the rock wall near the bridal suite. Kristine and Bernie only, plus the photographer. There is no first look between Kristine and Julian.</td></tr>
+</table>
+<a class="top" href="#top">Back to top</a>
+
+<!-- ============ CEREMONY ============ -->
+<h2 id="ceremony"><small>4:00 to 5:00 pm</small>Ceremony</h2>
+<table class="tl">
+  <tr><td class="t">4:00 pm</td><td>Guests arrive and walk down to the Minerals Wedding Garden. Lemonade, iced tea, water and hot cider are on the concrete bar. Programs and fans are handed out at the table at the bottom of the stairs. Front rows are reserved for family on each side.</td></tr>
+  <tr><td class="t">4:00 pm</td><td><b>Full wedding party lined up in the Diamond Ballroom.</b> Staff keep guests inside until the wedding party is in place.</td></tr>
+  <tr><td class="t">4:30 pm</td><td>Processional begins. Dana cues each pair. Walk slowly.</td></tr>
+  <tr><td class="t">About 4:35</td><td>Ring warming. Mason and Julian (the nephews) carry two ring boxes down the aisle so every guest can hold them and wish the couple well. Hold them briefly and pass them along.</td></tr>
+  <tr><td class="t">About 5:00</td><td>Recessional. Petal cones are on the front rows and the back rows. Toss as Kristine and Julian walk back up the aisle.</td></tr>
+  <tr><td class="t">5:00 to 5:45</td><td>Photos. Family first (30 minutes at most, only the people on the list Marissa sent both moms), then wedding party (about 15 minutes). Johnny takes the guys and Marissa takes the girls at the same time, then everyone together. Grab a drink from cocktail hour and bring one for Kristine and Julian.<span class="who">Family on the photo list, full wedding party</span></td></tr>
+</table>
+
+<h3>Processional order</h3>
+<div class="card">
+  <ol style="margin:0; padding-left:22px">
+    <li>Officiant: Daniel and Abigail Richards</li>
+    <li>Groom: Julian, escorted by his mom, Sonia</li>
+    <li>Mother of the bride: Maggie</li>
+    <li>Steve and Chrissy</li>
+    <li>Christopher and Kimberly</li>
+    <li>Hish and Charlene</li>
+    <li>Dan and Erin</li>
+    <li>Nick and Maria</li>
+    <li>Jon and Ashley</li>
+    <li>Dominic and Savannah</li>
+    <li>Peter and Gabriel</li>
+    <li>Flower granny: Felicita</li>
+    <li>Ring bearers: Mason and Julian</li>
+    <li>Kristine, escorted by her dad, Bernie</li>
+  </ol>
+</div>
+<a class="top" href="#top">Back to top</a>
+
+<!-- ============ COCKTAIL HOUR ============ -->
+<h2 id="cocktail"><small>5:00 to 6:00 pm</small>Cocktail hour</h2>
+<p>Minerals Garden Patio (outside) and the Diamond Lounge (inside), directly behind the ceremony space. Open bar, welcome champagne, sangria station, passed hors d'oeuvres, and stations: raw bar, carving, wok and Taste of Italy.</p>
+<p>Signature drinks: <b>His</b> is a Black Negroni with Hendrick's. <b>Hers</b> is a Moscow Mule with Tito's.</p>
+<p>Kristine and Julian will be at cocktail hour after photos. Marissa will be a few feet from them the whole time, so this is the easiest moment for anyone to get a picture with them.</p>
+<p>Grandma and anyone who needs it: a golf cart runs between the hotel, the garden and the Pavilion all evening. Flag Kaya.</p>
+<a class="top" href="#top">Back to top</a>
+
+<!-- ============ RECEPTION ============ -->
+<h2 id="reception"><small>6:00 to 10:00 pm</small>Reception at the Sweetgrass Pavilion</h2>
+<table class="tl">
+  <tr><td class="t">6:00 pm</td><td>Guests are invited to walk the stone path to the Pavilion first. Tables are listed on the mirror seating chart at the entrance. Everyone being introduced hangs back with a drink and is walked over by Dana and lined up outside the Pavilion.</td></tr>
+  <tr><td class="t">About 6:15</td><td>Grand entrance, introduced by Jony (the MC), in this order: groomsmen as a group, bridesmaids as a group, Kristine's parents, Julian's mom, flower granny and ring bearers together, then Kristine and Julian.</td></tr>
+  <tr><td class="t">Right after</td><td>First dance. Then parent dances: Kristine with her dad for the first half of the song and her mom for the second half, then Julian with his mom.</td></tr>
+  <tr><td class="t">Right after</td><td>Toasts, all together before the buffet opens. Bernie gives the welcome, then the two best men and the two maids of honor (order to be settled with the four speakers at the rehearsal dinner). Julian then gives a short toast to his mom, and Kristine closes with a very brief thank you from the two of them before the party starts. Shooting for under 4 minutes each, ideally. The bar stays open the whole time.</td></tr>
+  <tr><td class="t">About 6:45</td><td>Buffet opens, table by table. Everything is labeled, including gluten free and dairy free. Plates are at the buffet, not on the tables.</td></tr>
+  <tr><td class="t">Around sunset</td><td>Kristine and Julian slip out for portraits. They will be back in about 15 minutes.</td></tr>
+  <tr><td class="t">After dinner</td><td>Dance floor opens. Dessert is a Viennese table plus an ice cream sundae bar, and s'mores at the fire pits on the patio. Photo booth is at the top of the ramp by the card box. Lawn games are on the patio.</td></tr>
+  <tr><td class="t">9:55 pm</td><td>Last song. Dana will invite everyone to head to the pool so Kristine and Julian can have a private last dance.</td></tr>
+  <tr><td class="t">10:00 pm</td><td>Reception ends. Walk or golf cart back to the hotel.</td></tr>
+</table>
+<a class="top" href="#top">Back to top</a>
+
+<!-- ============ AFTER PARTY ============ -->
+<h2 id="afterparty"><small>10:00 pm to 1:00 am</small>After party at the indoor pool</h2>
+<div class="card">
+  <ul>
+    <li><b>Wristbands at the door.</b> Invited guests only. The pool, hot tubs, spa and sauna are private to the wedding group. The outdoor pool is closed.</li>
+    <li><b>Towels come from guest rooms.</b> The pool does not stock them and the front desk will not announce it. Swimsuits are welcome; so are dry clothes.</li>
+    <li>Food goes out at 10:30 pm: spinach and artichoke dip, mac and cheese bites, wings, churros.</li>
+    <li>Open bar 10:30 pm to midnight, then cash bar. Last call 1:00 am. Tips for the bartenders are appreciated.</li>
+    <li>Lifeguards and security are on duty. If there is lightning, everyone is out of the water for 30 minutes; the bar and sauna stay open and they usually extend the end time.</li>
+    <li>Floats are already at the pool. No glass on the deck.</li>
+  </ul>
+</div>
+<a class="top" href="#top">Back to top</a>
+
+<!-- ============ SATURDAY ============ -->
+<h2 id="saturday"><small>Saturday, September 26</small>The morning after</h2>
+<ul>
+  <li>Parents have late checkout at 1:00 pm. Everyone else checks out at the standard time unless the room was extended.</li>
+  <li>Kristine and Julian are staying Saturday night. Anyone still around is welcome to join them for a slow brunch.</li>
+</ul>
+<a class="top" href="#top">Back to top</a>
+
+<!-- ============ ROLES ============ -->
+<h2 id="roles"><small>Venue staff</small>Dana and Kaya</h2>
+<ul>
+  <li><b>Dana Cintron</b> is the wedding coordinator. She runs the day, cues the processional and is the first stop for any question.</li>
+  <li><b>Kaya</b> is the bridal attendant, with Kristine and Julian all day. Ask her for the golf cart, directions, or anything for the couple.</li>
+</ul>
+<a class="top" href="#top">Back to top</a>
+
+<!-- ============ RAIN ============ -->
+<h2 id="rain"><small>Weather</small>Rain plan</h2>
+<ul>
+  <li><b>Cocktail hour</b> is decided Thursday. If it moves inside, food and bar are in the Diamond Ballroom and welcome drinks stay outside.</li>
+  <li><b>Ceremony</b> is decided Friday by noon. Dana keeps it outdoors whenever possible and will dry the chairs. If it moves inside, it is set in front of the ballroom windows looking into the garden, and a shuttle loops from the main lobby to the Pavilion afterward.</li>
+  <li>Times do not change either way. Kristine and Julian will text the group only if a location changes.</li>
+</ul>
+<a class="top" href="#top">Back to top</a>
+
+<!-- ============ CONTACTS ============ -->
+<h2 id="contacts"><small>Numbers</small>Contacts</h2>
+<div class="card grid">
+  <div class="kv"><b>Dana Cintron (coordinator, day of)</b>609-513-9166 mobile<br>973-864-8910 office</div>
+  <div class="kv"><b>Resort front desk and reservations</b>866-921-0422</div>
+</div>
+<div class="note">Day of, Kaya and Dana can answer most questions on the spot.</div>
+
+<footer>Moran Watson Wedding, September 25, 2026. Thank you for being part of it.</footer>
+</div>
+<script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById('modeBtn'), saved=null;
+  try{ saved=localStorage.getItem('guide-theme'); }catch(e){}
+  function apply(t){ if(t==='dark'){root.setAttribute('data-theme','dark'); btn.textContent='Light mode';} else {root.removeAttribute('data-theme'); btn.textContent='Dark mode';} }
+  apply(saved==='dark'?'dark':'light');
+  btn.addEventListener('click',function(){ var t=root.getAttribute('data-theme')==='dark'?'light':'dark'; apply(t); try{ localStorage.setItem('guide-theme',t); }catch(e){} });
+})();
+</script>
+</body>
+</html>
